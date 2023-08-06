@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/png" href="./img/logo-icon.png" />
+  </head>
+  <body id="body">
+    <h1 class="visually-hidden">Portfoli Site</h1>
+    <header class="header">
+      <div class="container header__content">
+        <a href="./index.html">
+          <img src="./img/logo-icon.png" alt="Logo" width="120" />
+        </a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__list-item">
+              <a class="header__list-link" href="/index.html">Home</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__list-link" href="#about">About</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__list-link" href="#service">Services</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__list-link" href="#projects">Projects</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__list-link" href="#contact">Contact me</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__dark-mode">
+          <input type="checkbox" id="theme" hidden />
+          <label class="theme" for="theme"></label>
+        </div>
+      </div>
+    </header>
+    <button class="header__menu">
+      <img src="./img/menu.svg" alt="menu" />
+    </button>
+
+    <main class="main">
+      <section class="main__section">
+        <div class="container main__content">
+          <div>
+            <h2 class="main__title">Salom, Mening ismim Mizrobbek</h2>
+            <p class="main__text">Frontend Developer</p>
+            <button type="submit" class="main__btn">Download CV</button>
+
+            <ul class="main__social">
+              <li class="main__social-item">
+                <a href="https://t.me/mizrob_bek">
+                  <img src="./img/telegram.png" alt="Telegram" width="24" />
+                </a>
+              </li>
+
+              <li class="main__social-item">
+                <a href="https://www.facebook.com/sardor.olmasov.7/">
+                  <img src="./img/facebook.png" alt="Facebook" width="24" />
+                </a>
+              </li>
+              <li class="main__social-item">
+                <a href="https://instagram.com/mizrobbek_">
+                  <img src="./img/instagram.png" alt="Instagram" width="24" />
+                </a>
+              </li>
+              <li class="main__social-item">
+                <a
+                  href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BDMXwb%2FnHSOeFMNglI0ZCWg%3D%3D"
+                >
+                  <img src="./img/linkedin.png" alt="Linkidin" width="24" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <img src="./img/main section.png" alt="Section img" width="502" />
+        </div>
+
+        <div class="container">
+          <ul class="main__langs">
+            <li class="main__langs-item">
+              <div class="main__langs-ellipse">
+                <img
+                  class="main__langs-img"
+                  src="./img/html-5.png"
+                  alt="HTML icon"
+                />
+              </div>
+              <p class="main__langs-text">HTML</p>
+            </li>
+
+            <li class="main__langs-item">
+              <div class="main__langs-ellipse">
+                <img
+                  class="main__langs-img"
+                  src="./img/css-3.png"
+                  alt="CSS icon"
+                />
+              </div>
+              <p class="main__langs-text">CSS</p>
+            </li>
+
+            <li class="main__langs-item">
+              <div class="main__langs-ellipse">
+                <img
+                  class="main__langs-img"
+                  src="./img/sass.png"
+                  alt="SASS icon"
+                />
+              </div>
+              <p class="main__langs-text">SASS</p>
+            </li>
+
+            <li class="main__langs-item">
+              <div class="main__langs-ellipse">
+                <img
+                  class="main__langs-img main__bootstrap"
+                  src="./img/bootstrap.png"
+                  alt="Bootstrap icon"
+                />
+              </div>
+              <p class="main__langs-text">BOOTSTRAP</p>
+            </li>
+
+            <li class="main__langs-item">
+              <div class="main__langs-ellipse">
+                <img
+                  class="main__langs-img"
+                  src="./img/tailwindcss.svg"
+                  alt="tailwindcss icon"
+                />
+              </div>
+              <p class="main__langs-text">TAILWINDCSS</p>
+            </li>
+
+            <li class="main__langs-item">
+              <div class="main__langs-ellipse">
+                <img
+                  class="main__langs-img"
+                  src="./img/java-script.png"
+                  alt="Javascript icon"
+                />
+              </div>
+              <p class="main__langs-text">JAVASCRIPT</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="about__title">About</h2>
+
+          <div class="about__content">
+            <img class="about__img" src="./img/about-sec.jpg" alt="My img" />
+
+            <div>
+              <p class="about__text">
+                Assalomu alaykum, Mening ismim Mizrobbek. Yoshim 23 da. Buxoro
+                viloyati Peshku tumanida tug'ilganman. Dasturlashga qiziqaman va
+                hozirda dasrurlash bo'yicha ko'nikmalarimni
+                rivojlantirmoqdaman!!!
+              </p>
+
+              <button class="about__btn">Ko'proq o'qish</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="service" class="service">
+        <div class="container">
+          <h2 class="service__title">Services</h2>
+          <ul class="service__list">
+            <li class="service__list-item">
+              <img
+                class="service__list-img"
+                src="./img/smm.png"
+                alt="Service img"
+              />
+              <h3 class="service__list-title">SMM Meneger</h3>
+            </li>
+            <li class="service__list-item">
+              <img
+                class="service__list-img"
+                src="./img/service1.png"
+                alt="Service img"
+              />
+              <h3 class="service__list-title">Software Development</h3>
+            </li>
+            <li class="service__list-item">
+              <img
+                class="service__list-img"
+                src="./img/designer.png"
+                alt="Service img"
+              />
+              <h3 class="service__list-title">Designer</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="project">
+        <div class="container">
+          <h2 class="project__title">Projects</h2>
+
+          <ul class="project__list">
+            <li class="project__list-item">
+              <img
+                class="project__list-img"
+                src="./img/easybank.png"
+                alt="project img"
+              />
+              <h3 class="project__list-title">EasyBank website</h3>
+              <a
+                class="project__list-link"
+                href="https://myeasybanksite.netlify.app/"
+                >see preview</a
+              >
+            </li>
+
+            <li class="project__list-item">
+              <img
+                class="project__list-img"
+                src="./img/portfolio.png"
+                alt="project img"
+              />
+              <h3 class="project__list-title">Portfolio website</h3>
+              <a
+                class="project__list-link"
+                href="https://mizrobbek-portfolio.netlify.app/"
+                >see preview</a
+              >
+            </li>
+
+            <li class="project__list-item">
+              <img
+                class="project__list-img"
+                src="./img/milandi.png"
+                alt="project img"
+              />
+              <h3 class="project__list-title">Online Shopping website</h3>
+              <a
+                class="project__list-link"
+                href="https://mizrobbek-milandi.netlify.app/"
+                >see preview</a
+              >
+            </li>
+
+            <li class="project__list-item">
+              <img
+                class="project__list-img"
+                src="./img/vet-clinik.png"
+                alt="project img"
+              />
+              <h3 class="project__list-title">Vet Clinik website</h3>
+              <a
+                class="project__list-link"
+                href="https://mizrobbek-vet-clinic.netlify.app/"
+                >see preview</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="contact__title">Contact Me</h2>
+
+          <div class="contact__content">
+            <h3 class="contact__content_title">Get in touch</h3>
+
+            <div class="contact__forms">
+              <form class="contact__form">
+                <input
+                  class="contact__btn"
+                  type="email"
+                  name="mail"
+                  id="email"
+                  placeholder="E-mail"
+                />
+
+                <input
+                  class="contact__btn"
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  placeholder="Phone"
+                />
+                <br />
+
+                <input
+                  class="contact__btn contact__message"
+                  type="text"
+                  name="massage"
+                  id="massage"
+                  placeholder="Massage"
+                />
+
+                <button class="contact__send">Send</button>
+              </form>
+
+              <div>
+                <ul class="contact__list">
+                  <li>
+                    <a
+                      class="contact__list-item"
+                      href="https://yandex.uz/maps/-/CCUHQTHndC"
+                    >
+                      <img
+                        class="contact__list-img"
+                        src="./img/location.svg"
+                        alt="location"
+                      />
+                      <div>
+                        <h3 class="contact__list-title">Location</h3>
+                        <address class="contact__list-address">
+                          Buxoro viloyati Peshku tumani
+                        </address>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="contact__list-item" href="tel:2349066774837">
+                      <img
+                        class="contact__list-img"
+                        src="./img/telephone.svg"
+                        alt="telephone"
+                      />
+                      <div>
+                        <h3 class="contact__list-title">Phone</h3>
+                        <address class="contact__list-address">
+                          +998 94 325 00 14
+                        </address>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      class="contact__list-item"
+                      href="email:baqoyevmizrob@gmail.com"
+                    >
+                      <img
+                        class="contact__list-img"
+                        src="./img/email.svg"
+                        alt="email"
+                      />
+                      <div>
+                        <h3 class="contact__list-title">Email</h3>
+                        <address class="contact__list-address">
+                          baqoyevmizrob@gmail.com
+                        </address>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">© Mizrobbek 2023</p>
+    </footer>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+body {
+  background: #dbdbdb;
+}
+
+.dark {
+  background-color: #232323;
+}
+
+.theme {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/moon.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.dark .header__content {
+  background-color: #232323;
+  box-shadow: 0px 0px 10.0547px rgba(255, 238, 238, 0.384);
+}
+
+.dark .header__list-link {
+  color: #9e9b9b;
+}
+
+#theme:checked + .theme {
+  background-image: url("../img/sun.png");
+}
+
+.header {
+  &__content {
+    display: flex;
+    align-items: center;
+    background: #dbdbdb;
+    box-shadow: 0px 0px 10.0547px rgba(0, 0, 0, 0.1);
+    margin-bottom: 84px;
+  }
+  &__nav {
+    height: 78px;
+    padding-top: 23px;
+    padding-left: 30px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 58px;
+  }
+
+  &__list-link {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: rgba(69, 81, 116, 0.8);
+  }
+
+  &__dark-mode {
+    position: absolute;
+    right: 10px;
+  }
+
+  &__menu {
+    position: absolute;
+    top: 38px;
+    left: 60px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background-color: transparent;
+    margin-bottom: 84px;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    display: none;
+
+    &__menu {
+      display: block;
+      margin-bottom: 84px;
+    }
+  }
+}
