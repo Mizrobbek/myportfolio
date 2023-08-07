@@ -4,32 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" type="image/png" href="./img/logo-icon.png" />
   </head>
   <body id="body">
-    <h1 class="visually-hidden">Portfoli Site</h1>
+    <h1 class="visually-hidden">Portfolio Site</h1>
     <header class="header">
       <div class="container header__content">
         <a href="./index.html">
-          <img src="./img/logo-icon.png" alt="Logo" width="120" />
+          <img
+            class="header__logo-img"
+            src="./img/logo-icon.png"
+            alt="Logo"
+            width="120"
+          />
         </a>
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__list-item">
-              <a class="header__list-link" href="/index.html">Home</a>
+              <a class="header__list-link" href="/index.html">Asosiy sahifa</a>
             </li>
             <li class="header__list-item">
-              <a class="header__list-link" href="#about">About</a>
+              <a class="header__list-link" href="#about">Men haqimda</a>
             </li>
             <li class="header__list-item">
-              <a class="header__list-link" href="#service">Services</a>
+              <a class="header__list-link" href="#service">Xizmatlar</a>
             </li>
             <li class="header__list-item">
-              <a class="header__list-link" href="#projects">Projects</a>
+              <a class="header__list-link" href="#projects">Proyektlar</a>
             </li>
             <li class="header__list-item">
-              <a class="header__list-link" href="#contact">Contact me</a>
+              <a class="header__list-link" href="#contact">Bog'lanish</a>
             </li>
           </ul>
         </nav>
@@ -50,35 +63,49 @@
           <div>
             <h2 class="main__title">Salom, Mening ismim Mizrobbek</h2>
             <p class="main__text">Frontend Developer</p>
-            <button type="submit" class="main__btn">Download CV</button>
+            <button type="submit" class="main__btn" id="btn">
+              Download CV
+            </button>
 
             <ul class="main__social">
               <li class="main__social-item">
-                <a href="https://t.me/mizrob_bek">
-                  <img src="./img/telegram.png" alt="Telegram" width="24" />
+                <a
+                  href="https://t.me/mizrob_bek"
+                  class="fa fa-telegram"
+                  id="telegram"
+                >
                 </a>
               </li>
 
               <li class="main__social-item">
                 <a href="https://www.facebook.com/sardor.olmasov.7/">
-                  <img src="./img/facebook.png" alt="Facebook" width="24" />
+                  <i class="fa fa-facebook-square" id="facebook"></i>
                 </a>
               </li>
               <li class="main__social-item">
-                <a href="https://instagram.com/mizrobbek_">
-                  <img src="./img/instagram.png" alt="Instagram" width="24" />
+                <a
+                  href="https://instagram.com/mizrobbek_"
+                  class="fa fa-instagram"
+                  id="instagram"
+                >
                 </a>
               </li>
               <li class="main__social-item">
                 <a
                   href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BDMXwb%2FnHSOeFMNglI0ZCWg%3D%3D"
+                  class="fa fa-linkedin"
+                  id="linkedin"
                 >
-                  <img src="./img/linkedin.png" alt="Linkidin" width="24" />
                 </a>
               </li>
             </ul>
           </div>
-          <img src="./img/main section.png" alt="Section img" width="502" />
+          <img
+            class="main__img"
+            src="./img/main section.png"
+            alt="Section img"
+            width="502"
+          />
         </div>
 
         <div class="container">
@@ -154,7 +181,7 @@
 
       <section id="about" class="about">
         <div class="container">
-          <h2 class="about__title">About</h2>
+          <h2 class="about__title">Men haqimda</h2>
 
           <div class="about__content">
             <img class="about__img" src="./img/about-sec.jpg" alt="My img" />
@@ -167,7 +194,9 @@
                 rivojlantirmoqdaman!!!
               </p>
 
-              <button class="about__btn">Ko'proq o'qish</button>
+              <a href="./html/about.html" class="about__btn-link"
+                >Ko'proq o'qish</a
+              >
             </div>
           </div>
         </div>
@@ -175,7 +204,7 @@
 
       <section id="service" class="service">
         <div class="container">
-          <h2 class="service__title">Services</h2>
+          <h2 class="service__title">Xizmatlar</h2>
           <ul class="service__list">
             <li class="service__list-item">
               <img
@@ -207,7 +236,7 @@
 
       <section id="projects" class="project">
         <div class="container">
-          <h2 class="project__title">Projects</h2>
+          <h2 class="project__title">Proyektlar</h2>
 
           <ul class="project__list">
             <li class="project__list-item">
@@ -220,7 +249,7 @@
               <a
                 class="project__list-link"
                 href="https://myeasybanksite.netlify.app/"
-                >see preview</a
+                >saytni ko'rish</a
               >
             </li>
 
@@ -234,7 +263,7 @@
               <a
                 class="project__list-link"
                 href="https://mizrobbek-portfolio.netlify.app/"
-                >see preview</a
+                >saytni ko'rish</a
               >
             </li>
 
@@ -248,7 +277,7 @@
               <a
                 class="project__list-link"
                 href="https://mizrobbek-milandi.netlify.app/"
-                >see preview</a
+                >saytni ko'rish</a
               >
             </li>
 
@@ -262,7 +291,7 @@
               <a
                 class="project__list-link"
                 href="https://mizrobbek-vet-clinic.netlify.app/"
-                >see preview</a
+                >saytni ko'rish</a
               >
             </li>
           </ul>
@@ -271,7 +300,7 @@
 
       <section id="contact" class="contact">
         <div class="container">
-          <h2 class="contact__title">Contact Me</h2>
+          <h2 class="contact__title">Men bilan bog'lanish</h2>
 
           <div class="contact__content">
             <h3 class="contact__content_title">Get in touch</h3>
@@ -370,7 +399,7 @@
     </main>
 
     <footer class="footer">
-      <p class="footer__text">© Mizrobbek 2023</p>
+      <p class="footer__text">© Creat by Mizrobbek 2023</p>
     </footer>
 
     <script src="./js/index.js"></script>
